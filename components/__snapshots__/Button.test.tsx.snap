@@ -1,8 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button matches disabled state 1`] = `
+<button
+  className="px-4 py-2 text-gray-500 bg-gray-300 cursor-not-allowed"
+  disabled={true}
+>
+  Disabled
+</button>
+`;
+
 exports[`Button matches primary (default) type snapshot 1`] = `
 <button
   className="px-4 py-2 text-white bg-green-700 hover:bg-green-800"
+  disabled={false}
 >
   Primary
 </button>
@@ -11,22 +21,25 @@ exports[`Button matches primary (default) type snapshot 1`] = `
 exports[`Button matches secondary type snapshot 1`] = `
 <button
   className="px-4 py-2 text-white bg-blue-700 hover:bg-blue-800"
+  disabled={false}
 >
   Secondary
 </button>
 `;
 
-exports[`Button renders with external className as object 1`] = `
+exports[`Button matches with external className as object 1`] = `
 <button
   className="px-4 py-2 text-white bg-green-700 hover:bg-green-800 external-classname-true"
+  disabled={false}
 >
   Hello
 </button>
 `;
 
-exports[`Button renders with external className as string 1`] = `
+exports[`Button matches with external className as string 1`] = `
 <button
   className="px-4 py-2 text-white bg-green-700 hover:bg-green-800 external-classname"
+  disabled={false}
 >
   Hello
 </button>

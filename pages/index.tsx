@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { NextPage } from 'next'
+import Button from '../components/Button'
 import '../styles/main.css'
 
 interface Props {
@@ -8,11 +9,10 @@ interface Props {
 
 const Page: NextPage<Props> = ({ userAgent }) => {
   return (
-    <main className="h-screen bg-green-700 py-16 px-8">
-      <h1 className="text-white text-center text-4xl uppercase font-black mb-8">
-        Your user agent
-      </h1>
-      <h2 className="text-white text-center m-w-50">{userAgent}</h2>
+    <main className="text-center  h-screen bg-gray-200 py-16 px-8">
+      <h1 className="text-4xl uppercase font-black mb-8">Your user agent</h1>
+      <h2 className="m-w-50 mb-4">{userAgent}</h2>
+      <Button>Hello World</Button>
     </main>
   )
 }

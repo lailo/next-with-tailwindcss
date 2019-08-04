@@ -12,7 +12,8 @@ const Page: NextPage<Props> = ({ userAgent }) => {
     <main className="text-center  h-screen bg-gray-200 py-16 px-8">
       <h1 className="text-4xl uppercase font-black mb-8">Your user agent</h1>
       <h2 className="m-w-50 mb-4">{userAgent}</h2>
-      <Button>Hello World</Button>
+      <Button>Primary (Default)</Button>
+      <Button type="secondary">Secondary</Button>
     </main>
   )
 }

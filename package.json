@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/lailo-ch/next-with-tailwindcss#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
     "next": "^9.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"

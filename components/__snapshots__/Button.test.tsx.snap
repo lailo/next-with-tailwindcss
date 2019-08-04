@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button matches primary (default) type snapshot 1`] = `
+<button
+  className="text-white px-4 py-2 bg-green-700 hover:bg-green-800"
+>
+  Primary
+</button>
+`;
+
+exports[`Button matches secondary type snapshot 1`] = `
+<button
+  className="text-white px-4 py-2 bg-blue-700 hover:bg-blue-800"
+>
+  Secondary
+</button>
+`;
+
 exports[`Button matches snapshot 1`] = `
 <button
   className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 "

@@ -9,8 +9,14 @@ describe('Button', () => {
     const wrapper = shallow(<Button>Hello</Button>)
     expect(wrapper.text()).toEqual('Hello')
   })
-  it('matches snapshot', () => {
-    const wrapper = shallow(<Button>Snapshot</Button>)
+
+  it('matches primary (default) type snapshot', () => {
+    const wrapper = shallow(<Button>Primary</Button>)
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })
+
+  it('matches secondary type snapshot', () => {
+    const wrapper = shallow(<Button type="secondary">Secondary</Button>)
     expect(toJson(wrapper)).toMatchSnapshot()
   })
 })

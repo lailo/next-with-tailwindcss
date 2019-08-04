@@ -4,7 +4,7 @@ import cn from 'classnames'
 interface Props {
   type?: 'primary' | 'secondary'
   className?: string | object
-  disabled?: boolean
+  loading?: boolean
   [key: string]: any
 }
 
@@ -12,9 +12,11 @@ const Button: React.FunctionComponent<Props> = ({
   children,
   className,
   type = 'primary',
-  disabled = false,
+  loading = false,
   ...props
 }) => {
+  const disabled = props.disabled || loading
+
   const mergedClassName = cn(
     'px-4 py-2',
     { 'text-white': !disabled, 'text-gray-500': disabled },
@@ -24,7 +26,8 @@ const Button: React.FunctionComponent<Props> = ({
       'bg-gray-300': disabled,
     },
     {
-      'cursor-not-allowed': disabled,
+      'cursor-not-allowed': disabled && !loading,
+      'cursor-wait': loading,
     },
     className
   )
@@ -32,6 +35,7 @@ const Button: React.FunctionComponent<Props> = ({
   return (
     <button className={mergedClassName} disabled={disabled} {...props}>
       {children}
+      {loading && '...'}
     </button>
   )
 }

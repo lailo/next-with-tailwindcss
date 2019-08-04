@@ -45,4 +45,9 @@ describe('Button', () => {
     const wrapper = shallow(<Button disabled>Disabled</Button>)
     expect(toJson(wrapper)).toMatchSnapshot()
   })
+
+  it('matches loading state', () => {
+    const wrapper = shallow(<Button loading>Disabled</Button>)
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })
 })

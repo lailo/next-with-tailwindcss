@@ -1,3 +1,4 @@
+import * as React from "react";
 import { NextPage } from "next";
 import "../styles/main.css";
 

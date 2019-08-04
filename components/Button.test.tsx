@@ -19,4 +19,25 @@ describe('Button', () => {
     const wrapper = shallow(<Button type="secondary">Secondary</Button>)
     expect(toJson(wrapper)).toMatchSnapshot()
   })
+
+  it('renders with external className as string', () => {
+    const wrapper = shallow(
+      <Button className="external-classname">Hello</Button>
+    )
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })
+
+  it('renders with external className as object', () => {
+    const wrapper = shallow(
+      <Button
+        className={{
+          'external-classname-true': true,
+          'external-classname-false': false,
+        }}
+      >
+        Hello
+      </Button>
+    )
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })
 })

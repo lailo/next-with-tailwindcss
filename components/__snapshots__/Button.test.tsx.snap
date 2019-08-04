@@ -2,7 +2,7 @@
 
 exports[`Button matches primary (default) type snapshot 1`] = `
 <button
-  className="text-white px-4 py-2 bg-green-700 hover:bg-green-800"
+  className="px-4 py-2 text-white bg-green-700 hover:bg-green-800"
 >
   Primary
 </button>
@@ -10,16 +10,24 @@ exports[`Button matches primary (default) type snapshot 1`] = `
 
 exports[`Button matches secondary type snapshot 1`] = `
 <button
-  className="text-white px-4 py-2 bg-blue-700 hover:bg-blue-800"
+  className="px-4 py-2 text-white bg-blue-700 hover:bg-blue-800"
 >
   Secondary
 </button>
 `;
 
-exports[`Button matches snapshot 1`] = `
+exports[`Button renders with external className as object 1`] = `
 <button
-  className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 "
+  className="px-4 py-2 text-white bg-green-700 hover:bg-green-800 external-classname-true"
 >
-  Snapshot
+  Hello
+</button>
+`;
+
+exports[`Button renders with external className as string 1`] = `
+<button
+  className="px-4 py-2 text-white bg-green-700 hover:bg-green-800 external-classname"
+>
+  Hello
 </button>
 `;

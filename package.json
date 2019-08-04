@@ -8,6 +8,7 @@
     "start": "next start",
     "test": "npm run test:format && npm run test:unit",
     "test:unit": "jest",
+    "test:unit:watch": "jest --watch",
     "test:format": "prettier --check **/*.tsx"
   },
   "husky": {

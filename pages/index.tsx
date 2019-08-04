@@ -13,8 +13,11 @@ const Page: NextPage<Props> = ({ userAgent }) => {
       <h1 className="text-4xl uppercase font-black mb-8">Your user agent</h1>
       <h2 className="m-w-50 mb-4">{userAgent}</h2>
       <Button className="mr-4">Primary (Default)</Button>
-      <Button className={{ 'mr-5': true }} type="secondary">
+      <Button className={{ 'mr-4': true }} type="secondary">
         Secondary
+      </Button>
+      <Button className="mr-4" loading>
+        Create
       </Button>
       <Button disabled>Secondary</Button>
     </main>

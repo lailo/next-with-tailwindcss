@@ -1,0 +1,27 @@
+.btn {
+  @apply px-4 py-2;
+  @apply text-white;
+  @apply bg-green-700;
+
+  &:hover {
+    @apply bg-green-800;
+  }
+
+  &:disabled {
+    @apply bg-gray-300;
+    @apply text-gray-500;
+    @apply cursor-not-allowed;
+  }
+
+  &.loading {
+    @apply cursor-wait;
+  }
+
+  &.secondary {
+    @apply bg-blue-700;
+
+    &:hover {
+      @apply bg-blue-800;
+    }
+  }
+}

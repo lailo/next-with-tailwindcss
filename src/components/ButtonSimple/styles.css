@@ -23,5 +23,11 @@
     &:hover {
       @apply bg-blue-800;
     }
+
+    &:disabled {
+      @apply bg-gray-300;
+      @apply text-gray-500;
+      @apply cursor-not-allowed;
+    }
   }
 }

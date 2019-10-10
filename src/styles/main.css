@@ -1,3 +1,19 @@
+:root {
+  --tw-colors-black: #000000;
+  --tw-colors-white: #ffffff;
+
+  --tw-colors-gray-200: #edf2f7;
+  --tw-colors-gray-300: #e2e8f0;
+  --tw-colors-gray-500: #a0aec0;
+  --tw-colors-gray-600: #718096;
+
+  --tw-colors-green-700: #2f855a;
+  --tw-colors-green-800: #276749;
+
+  --tw-colors-blue-700: #2b6cb0;
+  --tw-colors-blue-800: #2c5282;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Switch from 'react-switch'
+import { FiMoon, FiSun } from 'react-icons/fi'
 
 const DARK_MODE_KEY = 'dark-mode'
 
@@ -25,12 +26,13 @@ const ThemeSwitch: React.FunctionComponent = () => {
     <Switch
       onChange={toggleDarkMode}
       checked={hasActiveDarkMode}
-      checkedIcon={null}
-      uncheckedIcon={null}
+      checkedIcon={<FiSun className="inline-block mx-2" />}
+      uncheckedIcon={<FiMoon className="inline-block mx-2" />}
       onColor="#f7fafc"
       offColor="#1a202c"
       onHandleColor="#1a202c"
       offHandleColor="#ffffff"
+      className="text-white"
     />
   )
 }

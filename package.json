@@ -32,6 +32,7 @@
     "next": "^9.1.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-icons": "^3.7.0",
     "react-switch": "^5.0.1"
   },
   "devDependencies": {

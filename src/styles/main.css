@@ -14,6 +14,18 @@
   --tw-colors-blue-800: #2c5282;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tw-colors-black: #f7fafc;
+    --tw-colors-white: #1a202c;
+
+    --tw-colors-gray-200: #2d3748;
+    --tw-colors-gray-300: #4a5568;
+    --tw-colors-gray-500: #a0aec0;
+    --tw-colors-gray-600: #cbd5e0;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

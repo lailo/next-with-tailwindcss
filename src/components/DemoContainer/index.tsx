@@ -32,7 +32,7 @@ const DemoContainer: React.FunctionComponent<Props> = ({
 }) => {
   return (
     <div className="bg-white my-5 p-5 shadow hover:shadow-xl">
-      <h2 className="m-w-50 mb-4">{title}</h2>
+      <h2 className="m-w-50 mb-4 text-black">{title}</h2>
       <div>
         {componentPopsList.map((props, index) => (
           <Component key={index} {...props}>

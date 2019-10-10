@@ -5,7 +5,7 @@ exports[`DemoContainer renders with buttton component 1`] = `
   className="bg-white my-5 p-5 shadow hover:shadow-xl"
 >
   <h2
-    className="m-w-50 mb-4"
+    className="m-w-50 mb-4 text-black"
   >
     Button
   </h2>
@@ -48,7 +48,7 @@ exports[`DemoContainer renders with buttton component 2`] = `
   className="bg-white my-5 p-5 shadow hover:shadow-xl"
 >
   <h2
-    className="m-w-50 mb-4"
+    className="m-w-50 mb-4 text-black"
   >
     ButtonSimple
   </h2>

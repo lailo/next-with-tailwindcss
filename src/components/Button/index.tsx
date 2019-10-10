@@ -1,7 +1,7 @@
 import * as React from 'react'
 import cn from 'classnames'
 
-interface Props {
+export interface Props {
   type?: 'primary' | 'secondary'
   className?: string | object
   loading?: boolean

@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DemoContainer renders with buttton component 1`] = `
+<div
+  className="bg-white my-5 p-5 shadow hover:shadow-xl"
+>
+  <h2
+    className="m-w-50 mb-4"
+  >
+    Button
+  </h2>
+  <div>
+    <Button
+      className="mr-4"
+      key="0"
+      type="primary"
+    >
+      primary
+    </Button>
+    <Button
+      className="mr-4"
+      key="1"
+      type="secondary"
+    >
+      secondary
+    </Button>
+    <Button
+      className="mr-4"
+      key="2"
+      loading={true}
+      type="primary"
+    >
+      primary
+    </Button>
+    <Button
+      disabled={true}
+      key="3"
+      type="secondary"
+    >
+      secondary
+    </Button>
+  </div>
+</div>
+`;
+
+exports[`DemoContainer renders with buttton component 2`] = `
+<div
+  className="bg-white my-5 p-5 shadow hover:shadow-xl"
+>
+  <h2
+    className="m-w-50 mb-4"
+  >
+    ButtonSimple
+  </h2>
+  <div>
+    <ButtonSimple
+      className="mr-4"
+      key="0"
+      type="primary"
+    >
+      primary
+    </ButtonSimple>
+    <ButtonSimple
+      className="mr-4"
+      key="1"
+      type="secondary"
+    >
+      secondary
+    </ButtonSimple>
+    <ButtonSimple
+      className="mr-4"
+      key="2"
+      loading={true}
+      type="primary"
+    >
+      primary
+    </ButtonSimple>
+    <ButtonSimple
+      disabled={true}
+      key="3"
+      type="secondary"
+    >
+      secondary
+    </ButtonSimple>
+  </div>
+</div>
+`;

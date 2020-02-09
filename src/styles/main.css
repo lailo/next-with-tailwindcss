@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --tw-colors-black: #000000;
   --tw-colors-white: #ffffff;
@@ -23,7 +27,3 @@ body.dark-mode {
   --tw-colors-gray-500: #a0aec0;
   --tw-colors-gray-600: #cbd5e0;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

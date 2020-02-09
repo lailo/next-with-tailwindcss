@@ -2,7 +2,6 @@ import * as React from 'react'
 import { NextPage } from 'next'
 import Button from '../components/Button'
 import ThemeSwitch from '../components/ThemeSwitch'
-import '../styles/main.css'
 
 interface Props {
   userAgent?: string

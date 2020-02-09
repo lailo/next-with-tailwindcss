@@ -8,7 +8,7 @@ export interface Props {
   [key: string]: any
 }
 
-const Button: React.FunctionComponent<Props> = ({
+const Button: React.FC<Props> = ({
   children,
   className,
   type = 'primary',

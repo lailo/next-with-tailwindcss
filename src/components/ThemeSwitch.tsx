@@ -4,7 +4,7 @@ import { FiMoon, FiSun } from 'react-icons/fi'
 
 const DARK_MODE_KEY = 'dark-mode'
 
-const ThemeSwitch: React.FunctionComponent = () => {
+const ThemeSwitch: React.FC = () => {
   const [hasActiveDarkMode, activateDarkMode] = React.useState<boolean>(false)
 
   const toggleDarkMode = () => {

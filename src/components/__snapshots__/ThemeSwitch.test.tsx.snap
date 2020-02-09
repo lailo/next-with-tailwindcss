@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeSwitch matches snapshot 1`] = `
+<ReactSwitch
+  activeBoxShadow="0 0 2px 3px #3bf"
+  boxShadow={null}
+  checked={false}
+  checkedIcon={
+    <FiSun
+      className="inline-block mx-2"
+    />
+  }
+  className="text-white"
+  disabled={false}
+  height={28}
+  offColor="#1a202c"
+  offHandleColor="#ffffff"
+  onChange={[Function]}
+  onColor="#f7fafc"
+  onHandleColor="#1a202c"
+  uncheckedIcon={
+    <FiMoon
+      className="inline-block mx-2"
+    />
+  }
+  width={56}
+/>
+`;

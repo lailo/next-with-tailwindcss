@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { NextPage } from 'next'
 import Button from '../components/Button'
-import DemoContainer from '../components/DemoContainer'
 import ThemeSwitch from '../components/ThemeSwitch'
 import '../styles/main.css'
 
@@ -21,8 +20,17 @@ const Page: NextPage<Props> = ({ userAgent }) => {
             <ThemeSwitch />
           </div>
         </header>
-        <main className="flex-grow flex flex-col items-center my-10">
-          <DemoContainer Component={Button} title="Button" />
+        <main className="flex-grow flex justify-center items-center my-10">
+          <Button className="m-1">Primary</Button>
+          <Button className="m-1" type="secondary">
+            Secondary
+          </Button>
+          <Button className="m-1" disabled>
+            Disabled
+          </Button>
+          <Button className="m-1" loading>
+            Loading
+          </Button>
         </main>
         <footer className="text-xs text-center text-gray-600">
           {userAgent}

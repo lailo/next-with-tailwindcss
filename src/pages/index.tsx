@@ -3,11 +3,11 @@ import { NextPage } from 'next'
 import Button from '../components/Button'
 import ThemeSwitch from '../components/ThemeSwitch'
 
-interface Props {
+interface IndexPageProps {
   userAgent?: string
 }
 
-const Page: NextPage<Props> = ({ userAgent }) => {
+const IndexPage: NextPage<IndexPageProps> = ({ userAgent }) => {
   return (
     <div className="bg-gray-200">
       <div className="min-h-screen container py-8 max-w-xl flex flex-col ">
@@ -39,9 +39,9 @@ const Page: NextPage<Props> = ({ userAgent }) => {
   )
 }
 
-Page.getInitialProps = async ({ req }) => {
+IndexPage.getInitialProps = async ({ req }) => {
   const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
   return { userAgent }
 }
 
-export default Page
+export default IndexPage

@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout matches snapshot 1`] = `
+<Fragment>
+  <Head>
+    <title>
+      NextJS with TypeScript and TailwindCSS
+    </title>
+  </Head>
+  <div
+    className="min-h-screen flex flex-col bg-gray-200"
+  >
+    <header
+      className=" bg-gray-200 py-2 px-3 flex items-center sticky top-0"
+    >
+      <h1
+        className="flex-grow text-xl font-black text-black"
+      >
+        Your Awesome App
+      </h1>
+      <ThemeSwitch />
+    </header>
+    <main
+      className="flex-grow"
+    >
+      <h1>
+        hello world
+      </h1>
+    </main>
+    <footer
+      className="text-xs text-center text-gray-600 py-4 px-3"
+    >
+      Made with ♥️ by
+       
+      <a
+        href="https://www.twitter.com/lailo_ch"
+      >
+        @lailo_ch
+      </a>
+    </footer>
+  </div>
+</Fragment>
+`;
+
+exports[`Layout matches snapshot with custom className 1`] = `
+<Fragment>
+  <Head>
+    <title>
+      NextJS with TypeScript and TailwindCSS
+    </title>
+  </Head>
+  <div
+    className="min-h-screen flex flex-col bg-gray-200"
+  >
+    <header
+      className=" bg-gray-200 py-2 px-3 flex items-center sticky top-0"
+    >
+      <h1
+        className="flex-grow text-xl font-black text-black"
+      >
+        Your Awesome App
+      </h1>
+      <ThemeSwitch />
+    </header>
+    <main
+      className="flex-grow py-4 mx-3"
+    >
+      <h1>
+        hello world
+      </h1>
+    </main>
+    <footer
+      className="text-xs text-center text-gray-600 py-4 px-3"
+    >
+      Made with ♥️ by
+       
+      <a
+        href="https://www.twitter.com/lailo_ch"
+      >
+        @lailo_ch
+      </a>
+    </footer>
+  </div>
+</Fragment>
+`;
+
+exports[`Layout matches snapshot with title 1`] = `
+<Fragment>
+  <Head>
+    <title>
+      My Awesome App
+    </title>
+  </Head>
+  <div
+    className="min-h-screen flex flex-col bg-gray-200"
+  >
+    <header
+      className=" bg-gray-200 py-2 px-3 flex items-center sticky top-0"
+    >
+      <h1
+        className="flex-grow text-xl font-black text-black"
+      >
+        Your Awesome App
+      </h1>
+      <ThemeSwitch />
+    </header>
+    <main
+      className="flex-grow"
+    >
+      <h1>
+        hello world
+      </h1>
+    </main>
+    <footer
+      className="text-xs text-center text-gray-600 py-4 px-3"
+    >
+      Made with ♥️ by
+       
+      <a
+        href="https://www.twitter.com/lailo_ch"
+      >
+        @lailo_ch
+      </a>
+    </footer>
+  </div>
+</Fragment>
+`;

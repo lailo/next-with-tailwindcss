@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { NextPage } from 'next'
 import Button from '../components/Button'
-import ButtonSimple from '../components/ButtonSimple'
 import DemoContainer from '../components/DemoContainer'
 import ThemeSwitch from '../components/ThemeSwitch'
 import '../styles/main.css'
@@ -24,7 +23,6 @@ const Page: NextPage<Props> = ({ userAgent }) => {
         </header>
         <main className="flex-grow flex flex-col items-center my-10">
           <DemoContainer Component={Button} title="Button" />
-          <DemoContainer Component={ButtonSimple} title="ButtonSimple" />
         </main>
         <footer className="text-xs text-center text-gray-600">
           {userAgent}

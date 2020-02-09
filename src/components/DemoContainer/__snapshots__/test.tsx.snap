@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DemoContainer renders with buttton component 1`] = `
+exports[`DemoContainer renders with button component 1`] = `
 <div
   className="bg-white my-5 p-5 shadow hover:shadow-xl"
 >
@@ -39,49 +39,6 @@ exports[`DemoContainer renders with buttton component 1`] = `
     >
       secondary
     </Button>
-  </div>
-</div>
-`;
-
-exports[`DemoContainer renders with buttton component 2`] = `
-<div
-  className="bg-white my-5 p-5 shadow hover:shadow-xl"
->
-  <h2
-    className="m-w-50 mb-4 text-black"
-  >
-    ButtonSimple
-  </h2>
-  <div>
-    <ButtonSimple
-      className="mr-4"
-      key="0"
-      type="primary"
-    >
-      primary
-    </ButtonSimple>
-    <ButtonSimple
-      className="mr-4"
-      key="1"
-      type="secondary"
-    >
-      secondary
-    </ButtonSimple>
-    <ButtonSimple
-      className="mr-4"
-      key="2"
-      loading={true}
-      type="primary"
-    >
-      primary
-    </ButtonSimple>
-    <ButtonSimple
-      disabled={true}
-      key="3"
-      type="secondary"
-    >
-      secondary
-    </ButtonSimple>
   </div>
 </div>
 `;

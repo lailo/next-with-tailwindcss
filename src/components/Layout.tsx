@@ -1,7 +1,9 @@
 import * as React from 'react'
-import ThemeSwitch from './ThemeSwitch'
 import cn from 'classnames'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
+
+const ThemeSwitch = dynamic(() => import('./ThemeSwitch'), { ssr: false })
 
 interface LayoutProps {
   title?: string

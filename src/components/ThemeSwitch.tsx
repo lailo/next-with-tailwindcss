@@ -1,48 +1,38 @@
 import * as React from 'react'
 import Switch from 'react-switch'
 import { FiMoon, FiSun } from 'react-icons/fi'
+import useDarkMode from 'use-dark-mode'
 
-const DARK_MODE_CLASS_NAME = 'dark-mode'
-const DARK_MODE_TRANSITION_CLASS_NAME = 'dark-mode-transition'
-const DARK_MODE_TRANSITION_DURATION = 500
+const MODE_TRANSITION_CLASS_NAME = 'dark-mode-transition'
+const MODE_TRANSITION_DURATION = 500
+
+function setDarkModeTransition() {
+  document.documentElement.classList.add(MODE_TRANSITION_CLASS_NAME)
+  setTimeout(
+    () => document.documentElement.classList.remove(MODE_TRANSITION_CLASS_NAME),
+    MODE_TRANSITION_DURATION
+  )
+}
 
 const ThemeSwitch: React.FC = () => {
-  const [hasActiveDarkMode, activateDarkMode] = React.useState(false)
+  const { value: hasActiveDarkMode, toggle: activateDarkMode } = useDarkMode()
 
   const toggleDarkMode = () => {
-    document.documentElement.classList.add(DARK_MODE_TRANSITION_CLASS_NAME)
-    if (hasActiveDarkMode) {
-      document.documentElement.classList.remove(DARK_MODE_CLASS_NAME)
-    } else {
-      document.documentElement.classList.add(DARK_MODE_CLASS_NAME)
-    }
-    activateDarkMode(!hasActiveDarkMode)
-    setTimeout(
-      () =>
-        document.documentElement.classList.remove(
-          DARK_MODE_TRANSITION_CLASS_NAME
-        ),
-      DARK_MODE_TRANSITION_DURATION
-    )
+    setDarkModeTransition()
+    activateDarkMode()
   }
-
-  React.useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      toggleDarkMode()
-    }
-  }, [])
 
   return (
     <Switch
       onChange={toggleDarkMode}
       checked={hasActiveDarkMode}
-      checkedIcon={<FiSun className="inline-block mx-2" />}
-      uncheckedIcon={<FiMoon className="inline-block mx-2" />}
-      onColor="#f7fafc"
-      offColor="#1a202c"
-      onHandleColor="#1a202c"
-      offHandleColor="#ffffff"
-      className="text-white dark:text-black"
+      checkedIcon={<FiMoon className="inline-block mx-2 my-1" />}
+      uncheckedIcon={<FiSun className="inline-block mx-2 my-1" />}
+      onColor="#1a202c"
+      offColor="#f7fafc"
+      onHandleColor="#f7fafc"
+      offHandleColor="#1a202c"
+      className="text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-0"
     />
   )
 }

@@ -18,7 +18,7 @@ exports[`Layout matches snapshot 1`] = `
       >
         Your Awesome App
       </h1>
-      <ThemeSwitch />
+      <ForwardRef(LoadableComponent) />
     </header>
     <main
       className="flex-grow"
@@ -60,7 +60,7 @@ exports[`Layout matches snapshot with custom className 1`] = `
       >
         Your Awesome App
       </h1>
-      <ThemeSwitch />
+      <ForwardRef(LoadableComponent) />
     </header>
     <main
       className="flex-grow py-4 mx-3"
@@ -102,7 +102,7 @@ exports[`Layout matches snapshot with title 1`] = `
       >
         Your Awesome App
       </h1>
-      <ThemeSwitch />
+      <ForwardRef(LoadableComponent) />
     </header>
     <main
       className="flex-grow"

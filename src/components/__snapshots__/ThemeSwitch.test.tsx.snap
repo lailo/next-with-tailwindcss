@@ -6,21 +6,21 @@ exports[`ThemeSwitch matches snapshot 1`] = `
   boxShadow={null}
   checked={false}
   checkedIcon={
-    <FiSun
-      className="inline-block mx-2"
+    <FiMoon
+      className="inline-block mx-2 my-1"
     />
   }
-  className="text-white dark:text-black"
+  className="text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-0"
   disabled={false}
   height={28}
-  offColor="#1a202c"
-  offHandleColor="#ffffff"
+  offColor="#f7fafc"
+  offHandleColor="#1a202c"
   onChange={[Function]}
-  onColor="#f7fafc"
-  onHandleColor="#1a202c"
+  onColor="#1a202c"
+  onHandleColor="#f7fafc"
   uncheckedIcon={
-    <FiMoon
-      className="inline-block mx-2"
+    <FiSun
+      className="inline-block mx-2 my-1"
     />
   }
   width={56}

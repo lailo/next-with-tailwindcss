@@ -2,18 +2,28 @@ import * as React from 'react'
 import Switch from 'react-switch'
 import { FiMoon, FiSun } from 'react-icons/fi'
 
-const DARK_MODE_KEY = 'dark-mode'
+const DARK_MODE_CLASS_NAME = 'dark-mode'
+const DARK_MODE_TRANSITION_CLASS_NAME = 'dark-mode-transition'
+const DARK_MODE_TRANSITION_DURATION = 500
 
 const ThemeSwitch: React.FC = () => {
   const [hasActiveDarkMode, activateDarkMode] = React.useState(false)
 
   const toggleDarkMode = () => {
+    document.documentElement.classList.add(DARK_MODE_TRANSITION_CLASS_NAME)
     if (hasActiveDarkMode) {
-      document.body.classList.remove(DARK_MODE_KEY)
+      document.documentElement.classList.remove(DARK_MODE_CLASS_NAME)
     } else {
-      document.body.classList.add(DARK_MODE_KEY)
+      document.documentElement.classList.add(DARK_MODE_CLASS_NAME)
     }
     activateDarkMode(!hasActiveDarkMode)
+    setTimeout(
+      () =>
+        document.documentElement.classList.remove(
+          DARK_MODE_TRANSITION_CLASS_NAME
+        ),
+      DARK_MODE_TRANSITION_DURATION
+    )
   }
 
   React.useEffect(() => {
@@ -32,7 +42,7 @@ const ThemeSwitch: React.FC = () => {
       offColor="#1a202c"
       onHandleColor="#1a202c"
       offHandleColor="#ffffff"
-      className="text-white"
+      className="text-white dark:text-black"
     />
   )
 }

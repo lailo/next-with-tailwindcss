@@ -2,7 +2,7 @@
 
 exports[`Button matches disabled state 1`] = `
 <button
-  className="px-4 py-2 text-gray-500 bg-gray-300 cursor-not-allowed"
+  className="px-4 py-2 text-gray-500 dark:text-gray-700 bg-gray-300 dark:bg-gray-800 cursor-not-allowed"
   disabled={true}
 >
   Disabled
@@ -11,7 +11,7 @@ exports[`Button matches disabled state 1`] = `
 
 exports[`Button matches loading state 1`] = `
 <button
-  className="px-4 py-2 text-gray-500 bg-gray-300 cursor-wait"
+  className="px-4 py-2 text-gray-500 dark:text-gray-700 bg-gray-300 dark:bg-gray-800 cursor-wait"
   disabled={true}
 >
   Disabled

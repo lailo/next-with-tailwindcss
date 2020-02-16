@@ -19,11 +19,11 @@ const Button: React.FC<Props> = ({
 
   const mergedClassName = cn(
     'px-4 py-2',
-    { 'text-white': !disabled, 'text-gray-500': disabled },
+    { 'text-white': !disabled, 'text-gray-500 dark:text-gray-700': disabled },
     {
       'bg-green-700 hover:bg-green-800': !disabled && type === 'primary',
       'bg-blue-700 hover:bg-blue-800': !disabled && type === 'secondary',
-      'bg-gray-300': disabled,
+      'bg-gray-300 dark:bg-gray-800': disabled,
     },
     {
       'cursor-not-allowed': disabled && !loading,

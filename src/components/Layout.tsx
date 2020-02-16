@@ -18,9 +18,9 @@ const Layout: React.FC<LayoutProps> = ({
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="min-h-screen flex flex-col bg-gray-200">
-        <header className=" bg-gray-200 py-2 px-3 flex items-center sticky top-0">
-          <h1 className="flex-grow text-xl font-black text-black">
+      <div className="min-h-screen flex flex-col bg-gray-200 dark:bg-gray-900">
+        <header className="bg-white dark:bg-gray-800 py-2 px-3 flex items-center sticky top-0">
+          <h1 className="flex-grow text-xl font-black text-black dark:text-white dark:hover:text-black">
             Your Awesome App
           </h1>
           <ThemeSwitch />

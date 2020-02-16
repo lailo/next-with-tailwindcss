@@ -10,7 +10,7 @@ exports[`ThemeSwitch matches snapshot 1`] = `
       className="inline-block mx-2"
     />
   }
-  className="text-white"
+  className="text-white dark:text-black"
   disabled={false}
   height={28}
   offColor="#1a202c"

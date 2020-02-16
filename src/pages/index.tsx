@@ -10,8 +10,8 @@ interface IndexPageProps {
 const IndexPage: NextPage<IndexPageProps> = ({ userAgent }) => {
   return (
     <Layout title="Your Awesome App" className="container py-8 max-w-xl">
-      <p className="py-5 text-gray-400">{userAgent}</p>
-      <div className="text-center">
+      <p className="py-5 text-black dark:text-white">{userAgent}</p>
+      <div>
         <Button className="m-1">Primary</Button>
         <Button className="m-1" type="secondary">
           Secondary

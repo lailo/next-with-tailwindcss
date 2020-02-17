@@ -5,10 +5,9 @@ export interface Props {
   type?: 'primary' | 'secondary'
   className?: string | object
   loading?: boolean
-  [key: string]: any
 }
 
-const Button: React.FC<Props> = ({
+const Button: React.FC<Props & React.HTMLProps<HTMLButtonElement>> = ({
   children,
   className,
   type = 'primary',

@@ -30,7 +30,7 @@ exports[`Layout matches snapshot 1`] = `
     <footer
       className="text-xs text-center text-gray-600 py-4 px-3"
     >
-      Made with ♥️ by
+      Made with ♥ by
        
       <a
         href="https://www.twitter.com/lailo_ch"
@@ -72,7 +72,7 @@ exports[`Layout matches snapshot with custom className 1`] = `
     <footer
       className="text-xs text-center text-gray-600 py-4 px-3"
     >
-      Made with ♥️ by
+      Made with ♥ by
        
       <a
         href="https://www.twitter.com/lailo_ch"
@@ -114,7 +114,7 @@ exports[`Layout matches snapshot with title 1`] = `
     <footer
       className="text-xs text-center text-gray-600 py-4 px-3"
     >
-      Made with ♥️ by
+      Made with ♥ by
        
       <a
         href="https://www.twitter.com/lailo_ch"

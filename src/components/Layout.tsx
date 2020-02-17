@@ -29,7 +29,7 @@ const Layout: React.FC<LayoutProps> = ({
         </header>
         <main className={cn('flex-grow', className)}>{children}</main>
         <footer className="text-xs text-center text-gray-600 py-4 px-3">
-          Made with ♥️ by{' '}
+          Made with ♥ by{' '}
           <a href="https://www.twitter.com/lailo_ch">@lailo_ch</a>
         </footer>
       </div>

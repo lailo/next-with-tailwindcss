@@ -1,5 +1,5 @@
 import * as React from 'react'
-import cn from 'classnames'
+import clsx from 'clsx'
 
 export interface Props {
   type?: 'primary' | 'secondary'
@@ -16,7 +16,7 @@ const Button: React.FC<Props & React.HTMLProps<HTMLButtonElement>> = ({
 }) => {
   const disabled = props.disabled || loading
 
-  const mergedClassName = cn(
+  const mergedClassName = clsx(
     'px-4 py-2',
     { 'text-white': !disabled, 'text-gray-500 dark:text-gray-700': disabled },
     {

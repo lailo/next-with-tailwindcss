@@ -1,5 +1,5 @@
 import * as React from 'react'
-import cn from 'classnames'
+import clsx from 'clsx'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
@@ -27,7 +27,7 @@ const Layout: React.FC<LayoutProps> = ({
           </h1>
           <ThemeSwitch />
         </header>
-        <main className={cn('flex-grow', className)}>{children}</main>
+        <main className={clsx('flex-grow', className)}>{children}</main>
         <footer className="text-xs text-center text-gray-600 py-4 px-3">
           Made with ♥ by{' '}
           <a href="https://www.twitter.com/lailo_ch">@lailo_ch</a>

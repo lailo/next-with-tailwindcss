@@ -5,12 +5,12 @@ import dynamic from 'next/dynamic'
 
 const ThemeSwitch = dynamic(() => import('./ThemeSwitch'), { ssr: false })
 
-interface LayoutProps {
+export interface Props {
   title?: string
   className?: string | object
 }
 
-const Layout: React.FC<LayoutProps> = ({
+const Layout: React.FC<Props> = ({
   title = 'NextJS with TypeScript and TailwindCSS',
   className,
   children,

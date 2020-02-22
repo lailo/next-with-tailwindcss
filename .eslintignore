@@ -3,3 +3,4 @@ __snapshots__
 styles
 .next
 node_modules
+*.mdx

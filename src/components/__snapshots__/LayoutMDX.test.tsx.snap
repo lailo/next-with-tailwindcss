@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoutMDX matches snapshot 1`] = `
+<Layout>
+  <MDXProvider
+    components={
+      Object {
+        "h1": [Function],
+        "h2": [Function],
+        "h3": [Function],
+        "h4": [Function],
+        "h5": [Function],
+        "h6": [Function],
+        "li": [Function],
+        "ol": [Function],
+        "p": [Function],
+        "strong": [Function],
+        "sub": [Function],
+        "ul": [Function],
+      }
+    }
+  >
+    hello world
+  </MDXProvider>
+</Layout>
+`;

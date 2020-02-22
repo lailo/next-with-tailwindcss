@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Button from '../components/Button'
 import Input from '../components/Input'
 import Text from '../components/Text'
+import List from '../components/List'
 
 const IndexPage: NextPage = () => {
   return (
@@ -82,6 +83,20 @@ const IndexPage: NextPage = () => {
         <Text small className="mb-4">
           Small text
         </Text>
+      </section>
+
+      <section className="mb-20">
+        <h2 className="dark:text-gray-100 text-2xl font-thin mb-6">List</h2>
+        <List className="mb-4">
+          <List item>item 1</List>
+          <List item>item 2</List>
+          <List item>item 3</List>
+        </List>
+        <List ordered className="mb-4">
+          <List item>item 1</List>
+          <List item>item 2</List>
+          <List item>item 3</List>
+        </List>
       </section>
     </Layout>
   )

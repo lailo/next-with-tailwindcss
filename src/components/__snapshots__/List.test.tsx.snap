@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List matches empty ol snapshot 1`] = `
+<ol
+  className="list-inside leading-loose list-decimal text-base text-gray-700 dark:text-gray-300"
+>
+  items
+</ol>
+`;
+
+exports[`List matches empty ol snapshot 2`] = `
+<ol
+  className="list-inside leading-loose list-decimal text-base text-gray-700 dark:text-gray-300"
+>
+  <List
+    item={true}
+  >
+    item text
+  </List>
+  <List
+    item={true}
+  >
+    item text
+  </List>
+</ol>
+`;
+
+exports[`List matches empty ul snapshot 1`] = `
+<ul
+  className="list-inside leading-loose list-disc text-base text-gray-700 dark:text-gray-300"
+>
+  items
+</ul>
+`;
+
+exports[`List matches li snapshot 1`] = `
+<li
+  className="text-base text-gray-700 dark:text-gray-300"
+>
+  item text
+</li>
+`;
+
+exports[`List matches ul with item snapshot 1`] = `
+<ul
+  className="list-inside leading-loose list-disc text-base text-gray-700 dark:text-gray-300"
+>
+  <List
+    item={true}
+  >
+    item text
+  </List>
+  <List
+    item={true}
+  >
+    item text
+  </List>
+</ul>
+`;

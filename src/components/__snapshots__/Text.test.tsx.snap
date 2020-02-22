@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text matches bold snapshot 1`] = `
+<p
+  className="font-light leading-relaxed font-semibold text-base text-gray-700 dark:text-gray-300"
+>
+  Bold text
+</p>
+`;
+
+exports[`Text matches default text snapshot 1`] = `
+<p
+  className="font-light leading-relaxed text-base text-gray-700 dark:text-gray-300"
+>
+  This is a paragraph
+</p>
+`;
+
+exports[`Text matches h1 snapshot 1`] = `
+<h1
+  className="text-5xl text-gray-900 dark:text-gray-100 font-black"
+>
+  Header 1
+</h1>
+`;
+
+exports[`Text matches h2 snapshot 1`] = `
+<h2
+  className="text-4xl text-gray-900 dark:text-gray-100 font-black"
+>
+  Header 2
+</h2>
+`;
+
+exports[`Text matches h3 snapshot 1`] = `
+<h3
+  className="text-3xl text-gray-900 dark:text-gray-100 font-black"
+>
+  Header 3
+</h3>
+`;
+
+exports[`Text matches h4 snapshot 1`] = `
+<h4
+  className="text-2xl text-gray-900 dark:text-gray-100 font-black"
+>
+  Header 4
+</h4>
+`;
+
+exports[`Text matches h5 snapshot 1`] = `
+<h5
+  className="text-xl text-gray-900 dark:text-gray-100 font-black"
+>
+  Header 5
+</h5>
+`;
+
+exports[`Text matches h6 snapshot 1`] = `
+<h6
+  className="text-lg text-gray-900 dark:text-gray-100 font-black"
+>
+  Header 6
+</h6>
+`;
+
+exports[`Text matches small snapshot 1`] = `
+<small
+  className="text-xs text-gray-700 dark:text-gray-300"
+>
+  Small text
+</small>
+`;

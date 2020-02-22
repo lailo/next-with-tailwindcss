@@ -1,20 +1,20 @@
 import * as React from 'react'
 import { NextPage } from 'next'
+import { FiMail, FiUser } from 'react-icons/fi'
 import Layout from '../components/Layout'
 import Button from '../components/Button'
 import Input from '../components/Input'
-import { FiMail, FiUser } from 'react-icons/fi'
+import Text from '../components/Text'
 
 const IndexPage: NextPage = () => {
   return (
     <Layout title="Your Awesome App" className="container py-8 max-w-xl">
-      <h1 className="dark:text-gray-100 text-3xl font-black mb-5">
+      <h1 className="dark:text-gray-100 text-3xl font-black mb-20">
         Components
       </h1>
-      <section className="mb-8">
-        <h2 className="dark:text-gray-100 text-2xl font-extrabold mb-3">
-          Buttons
-        </h2>
+
+      <section className="mb-20">
+        <h2 className="dark:text-gray-100 text-2xl font-thin mb-6">Buttons</h2>
         <div>
           <Button className="mr-1">Primary</Button>
           <Button className="mr-1" type="secondary">
@@ -28,11 +28,9 @@ const IndexPage: NextPage = () => {
           </Button>
         </div>
       </section>
-      <section className="mb-8">
-        <h2 className="dark:text-gray-100 text-2xl font-extrabold mb-3">
-          Inputs
-        </h2>
-        <p className="text-xl"></p>
+
+      <section className="mb-20">
+        <h2 className="dark:text-gray-100 text-2xl font-thin mb-6">Inputs</h2>
         <Input placeholder="username" startIcon={FiUser} className="mb-4" />
         <Input placeholder="email" startIcon={FiMail} className="mb-4" />
         <Input placeholder="without icon" className="mb-4" />
@@ -49,6 +47,41 @@ const IndexPage: NextPage = () => {
           className="mb-4"
           startIcon={FiUser}
         />
+      </section>
+
+      <section className="mb-20">
+        <h2 className="dark:text-gray-100 text-2xl font-thin mb-6">Text</h2>
+        <Text h1 className="mb-4">
+          Header 1
+        </Text>
+        <Text h2 className="mb-4">
+          Header 2
+        </Text>
+        <Text h3 className="mb-4">
+          Header 3
+        </Text>
+        <Text h4 className="mb-4">
+          Header 4
+        </Text>
+        <Text h5 className="mb-4">
+          Header 5
+        </Text>
+        <Text h6 className="mb-4">
+          Header 6
+        </Text>
+        <Text className="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </Text>
+        <Text bold className="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </Text>
+        <Text small className="mb-4">
+          Small text
+        </Text>
       </section>
     </Layout>
   )

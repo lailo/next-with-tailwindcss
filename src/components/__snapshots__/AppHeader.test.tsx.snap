@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeader matches snapshot 1`] = `
+<header
+  className="bg-white dark:bg-gray-800 py-2 px-3 flex items-center sticky top-0"
+>
+  <div
+    className="mr-auto flex items-center"
+  >
+    <Link
+      href="/"
+    >
+      <a
+        className="flex-grow text-xl font-black text-black dark:text-white dark:hover:text-black"
+        href="/"
+      >
+        My Project
+      </a>
+    </Link>
+  </div>
+  <div>
+    <ForwardRef(LoadableComponent) />
+  </div>
+</header>
+`;

@@ -66,7 +66,6 @@
     "jest-transform-stub": "^2.0.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "1.19.1",
-    "pretty-quick": "^2.0.1",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.12.0",
     "tailwindcss": "^1.2.0",

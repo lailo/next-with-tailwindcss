@@ -30,7 +30,7 @@
   "homepage": "https://github.com/lailo-ch/next-with-tailwindcss#readme",
   "dependencies": {
     "clsx": "^1.1.0",
-    "next": "^9.2.1",
+    "next": "^9.3.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-icons": "^3.9.0",

@@ -1,11 +1,12 @@
 import * as React from 'react'
 import { NextPage } from 'next'
-import { FiMail, FiUser } from 'react-icons/fi'
+import { FiMail, FiLock, FiUser } from 'react-icons/fi'
 import Layout from '../components/Layout'
 import Button from '../components/Button'
 import Input from '../components/Input'
 import Text from '../components/Text'
 import List from '../components/List'
+import Card from '../components/Card'
 
 const IndexPage: NextPage = () => {
   return (
@@ -48,6 +49,28 @@ const IndexPage: NextPage = () => {
           className="mb-4"
           startIcon={FiUser}
         />
+      </section>
+
+      <section className="mb-20">
+        <h2 className="dark:text-gray-100 text-2xl font-thin mb-6">Card</h2>
+        <Card>
+          <Text h6 className="mb-4">
+            Welcome Back
+          </Text>
+          <Input
+            placeholder="email"
+            startIcon={FiMail}
+            label="eMail"
+            className="mb-4"
+          />
+          <Input
+            placeholder="****"
+            startIcon={FiLock}
+            label="Password"
+            className="mb-4"
+          />
+          <Button className="mr-1">Sign In</Button>
+        </Card>
       </section>
 
       <section className="mb-20">

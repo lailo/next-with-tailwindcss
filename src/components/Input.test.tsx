@@ -8,12 +8,7 @@ import Input from './Input'
 describe('Input', () => {
   it('renders with correct label', () => {
     const wrapper = shallow(<Input label="Hello" />)
-    expect(
-      wrapper
-        .find('label')
-        .first()
-        .text()
-    ).toEqual('Hello')
+    expect(wrapper.find('label').first().text()).toEqual('Hello')
   })
 
   it('renders with value', () => {

@@ -2,6 +2,7 @@ module.exports = {
   prefix: '',
   important: false,
   separator: ':',
+  purge: ['./src/components/**/*.tsx', './src/pages/**/*.tsx'],
   theme: {
     darkSelector: '.dark-mode',
     screens: {
@@ -200,6 +201,10 @@ module.exports = {
     },
     container: {
       center: true,
+      padding: {
+        default: '1rem',
+        md: '2rem',
+      },
     },
     cursor: {
       auto: 'auto',

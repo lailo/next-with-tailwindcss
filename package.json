@@ -38,7 +38,6 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.2.0",
     "@mdx-js/loader": "^1.6.1",
     "@next/mdx": "^9.3.6",
     "@types/jest": "^25.2.1",

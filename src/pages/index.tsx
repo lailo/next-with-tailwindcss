@@ -38,7 +38,7 @@ const IndexPage: NextPage = () => {
         <Input placeholder="without icon" className="mb-4" />
         <Input placeholder="disabled" disabled className="mb-4" />
         <Input
-          value="with error"
+          defaultValue="with error"
           startIcon={FiMail}
           hasError
           className="mb-4"

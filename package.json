@@ -10,11 +10,12 @@
     "test:unit": "jest",
     "test:unit:watch": "jest --watch",
     "test:format": "prettier --check .",
+    "test:tsc": "tsc --noEmit",
     "test:lint": "eslint './src/**/*' --ext .tsx,.ts"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:lint",
+      "pre-commit": "npm run test:tsc && npm run test:lint",
       "pre-push": "npm run test"
     }
   },

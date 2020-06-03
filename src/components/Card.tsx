@@ -12,7 +12,8 @@ const Card: React.FC<Props> = ({ className, children }) => {
         'rounded shadow-md',
         'p-4 sm:p-6 md:p-8',
         'bg-white dark:bg-gray-800',
-        'border border-gray-200 dark:border-gray-700'
+        'border border-gray-200 dark:border-gray-700',
+        className
       )}
     >
       {children}

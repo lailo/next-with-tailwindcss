@@ -8,11 +8,11 @@ exports[`AppHeader matches snapshot 1`] = `
     className="mr-auto flex items-center"
   >
     <Link
+      as="/"
       href="/"
     >
       <a
         className="flex-grow text-xl font-black text-black dark:text-white dark:hover:text-black"
-        href="/"
       >
         My Project
       </a>
@@ -23,13 +23,30 @@ exports[`AppHeader matches snapshot 1`] = `
       buttonLabel={<FiMoreHorizontal />}
     >
       <ul
-        className="w-40"
+        className="w-40 space-y-4 py-2"
       >
+        <li>
+          <Link
+            as="/typography"
+            href="/typography"
+          >
+            <a
+              className="text-green-600 hover:underline"
+            >
+              Typography
+            </a>
+          </Link>
+        </li>
+        <li>
+          <hr
+            className="dark:border-gray-700"
+          />
+        </li>
         <li
           className="flex items-center justify-between"
         >
           <span
-            className="mr-auto"
+            className="mr-auto text-sm text-gray-600"
           >
             Theme
           </span>

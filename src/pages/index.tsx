@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { NextPage } from 'next'
-import { FiMail, FiLock, FiUser } from 'react-icons/fi'
+import { FiMail, FiLock, FiUser, FiMoreHorizontal } from 'react-icons/fi'
 import Layout from '@components/layout/Layout'
 import Button from '@components/Button'
 import Input from '@components/Input'
 import Text from '@components/Text'
 import List from '@components/List'
 import Card from '@components/Card'
+import Dropdown from '@components/Dropdown'
 
 const IndexPage: NextPage = () => {
   return (
@@ -55,6 +56,16 @@ const IndexPage: NextPage = () => {
           className="mb-4"
           helpText="Add some content here"
         />
+      </section>
+
+      <section className="mb-20">
+        <h2 className="dark:text-gray-100 text-2xl font-thin mb-6">Dropdown</h2>
+        <Dropdown buttonLabel={<FiMoreHorizontal />}>
+          <ul className="w-32">
+            <li>hello world</li>
+            <li>how's it going</li>
+          </ul>
+        </Dropdown>
       </section>
 
       <section className="mb-20">

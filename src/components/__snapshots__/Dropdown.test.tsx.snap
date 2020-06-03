@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown matches snapshot 1`] = `
+<div
+  className="relative inline-block"
+>
+  <button
+    className="p-2 rounded-full hover:bg-green-700 hover:bg-opacity-25"
+    onClick={[Function]}
+  >
+    menu
+  </button>
+</div>
+`;

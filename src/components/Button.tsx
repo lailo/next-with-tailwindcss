@@ -3,7 +3,7 @@ import clsx from 'clsx'
 
 export interface Props {
   type?: 'primary' | 'secondary'
-  className?: string | object
+  className?: string | Record<string, unknown>
   loading?: boolean
 }
 

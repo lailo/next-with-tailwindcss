@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import { IconType } from 'react-icons/lib/cjs'
 
 export interface Props {
-  className?: string | object
+  className?: string | Record<string, unknown>
   startIcon?: IconType
   hasError?: boolean
   label?: string

@@ -5,7 +5,7 @@ import AppHeader from './AppHeader'
 
 export interface Props {
   title?: string
-  className?: string | object
+  className?: string | Record<string, unknown>
 }
 
 const Layout: React.FC<Props> = ({

@@ -2,7 +2,7 @@ import * as React from 'react'
 import clsx from 'clsx'
 
 export interface Props {
-  className?: string | object
+  className?: string | Record<string, unknown>
 }
 
 const Card: React.FC<Props> = ({ className, children }) => {

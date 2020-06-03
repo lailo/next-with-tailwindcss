@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic'
 const ThemeSwitch = dynamic(() => import('./ThemeSwitch'), { ssr: false })
 
 export interface Props {
-  className?: string | object
+  className?: string | Record<string, unknown>
 }
 
 const AppHeader: React.FC<Props> = ({ className }) => {

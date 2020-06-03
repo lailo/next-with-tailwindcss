@@ -6,6 +6,10 @@ module.exports = {
       center: true,
       padding: '1rem',
     },
+    fontFamily: {
+      header: ['Open Sans', 'sans-serif'],
+      body: ['Open Sans', 'sans-serif'],
+    },
     extend: {},
   },
   variants: {

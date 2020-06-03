@@ -8,10 +8,15 @@
 
 body {
   @apply bg-gray-200;
-  @apply text-black
+  @apply text-black;
+  @apply font-body;
 }
 
 body.dark-mode {
   @apply bg-gray-900;
-  @apply text-white
+  @apply text-white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @apply font-header;
 }

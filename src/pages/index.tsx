@@ -9,11 +9,11 @@ const IndexPage: NextPage = () => {
   return (
     <Layout title="Your Awesome App" className="container py-8 max-w-xl">
       <h1 className="dark:text-gray-100 text-3xl font-black mb-4">Welcome</h1>
-      <p className="mb-4">
+      <p className="mb-4 font-light text-lg">
         This is an template project using NextJS with TailwindCSS including dark
         mode switcher.
       </p>
-      <p className="mb-6">
+      <p className="mb-6 font-light text-lg">
         It includes some example components with jest testing and typography but
         it's not complete nor is it tested well.
       </p>

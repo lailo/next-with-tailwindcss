@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import Layout, { Props as LayoutProps } from './Layout'
-import Text from '../Text'
-import List from '../List'
+import Text from '@components/Text'
+import List from '@components/List'
 
 const components = {
   h1: ({ children }) => (

@@ -3,7 +3,9 @@ import clsx from 'clsx'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
-const ThemeSwitch = dynamic(() => import('./ThemeSwitch'), { ssr: false })
+const ThemeSwitch = dynamic(() => import('@components/layout/ThemeSwitch'), {
+  ssr: false,
+})
 
 export interface Props {
   className?: string | Record<string, unknown>

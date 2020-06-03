@@ -3,6 +3,11 @@ const TEST_REGEX = '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|js?|tsx?|ts?)$'
 module.exports = {
   setupFiles: ['<rootDir>/jest.setup.js'],
   testRegex: TEST_REGEX,
+  moduleNameMapper: {
+    '@components(.*)$': '<rootDir>/src/components$1',
+    '@pages(.*)$': '<rootDir>/src/pages$1',
+    '@styles(.*)$': '<rootDir>/src/styles$1',
+  },
   transform: {
     '^.+\\.tsx?$': 'babel-jest',
     '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$':

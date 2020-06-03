@@ -1,7 +1,7 @@
 import * as React from 'react'
 import clsx from 'clsx'
 import Head from 'next/head'
-import AppHeader from './AppHeader'
+import AppHeader from '@components/layout/AppHeader'
 
 export interface Props {
   title?: string

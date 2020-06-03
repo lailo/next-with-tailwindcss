@@ -30,8 +30,8 @@ const Dropdown: React.FC<Props> = ({ className, buttonLabel, children }) => {
     <div ref={node} className={clsx('relative inline-block', className)}>
       <button
         className={clsx('p-2 rounded-full', {
-          'hover:bg-green-700 hover:bg-opacity-25': !showDropdown,
-          'bg-green-700 text-white': showDropdown,
+          'hover:bg-primary hover:bg-opacity-25': !showDropdown,
+          'bg-primary text-white': showDropdown,
         })}
         onClick={toggleDropdown}
       >

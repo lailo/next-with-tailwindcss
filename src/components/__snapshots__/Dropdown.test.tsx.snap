@@ -5,7 +5,7 @@ exports[`Dropdown matches snapshot 1`] = `
   className="relative inline-block"
 >
   <button
-    className="p-2 rounded-full hover:bg-green-700 hover:bg-opacity-25"
+    className="p-2 rounded-full hover:bg-primary hover:bg-opacity-25"
     onClick={[Function]}
   >
     menu

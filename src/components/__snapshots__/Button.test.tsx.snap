@@ -21,7 +21,7 @@ exports[`Button matches loading state 1`] = `
 
 exports[`Button matches primary (default) type snapshot 1`] = `
 <button
-  className="px-4 py-2 text-white bg-green-700 hover:bg-green-800"
+  className="px-4 py-2 text-white bg-primary hover:bg-primary-darker"
   disabled={false}
 >
   Primary
@@ -30,7 +30,7 @@ exports[`Button matches primary (default) type snapshot 1`] = `
 
 exports[`Button matches secondary type snapshot 1`] = `
 <button
-  className="px-4 py-2 text-white bg-blue-700 hover:bg-blue-800"
+  className="px-4 py-2 text-white bg-secondary hover:bg-secondary-darker"
   disabled={false}
 >
   Secondary
@@ -39,7 +39,7 @@ exports[`Button matches secondary type snapshot 1`] = `
 
 exports[`Button matches with external className as object 1`] = `
 <button
-  className="px-4 py-2 text-white bg-green-700 hover:bg-green-800 external-classname-true"
+  className="px-4 py-2 text-white bg-primary hover:bg-primary-darker external-classname-true"
   disabled={false}
 >
   Hello
@@ -48,7 +48,7 @@ exports[`Button matches with external className as object 1`] = `
 
 exports[`Button matches with external className as string 1`] = `
 <button
-  className="px-4 py-2 text-white bg-green-700 hover:bg-green-800 external-classname"
+  className="px-4 py-2 text-white bg-primary hover:bg-primary-darker external-classname"
   disabled={false}
 >
   Hello

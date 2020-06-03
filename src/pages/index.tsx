@@ -19,12 +19,18 @@ const IndexPage: NextPage = () => {
       </p>
       <div className="space-x-4">
         <Link {...routes.COMPONENTS}>
-          <a className="bg-green-700 text-white px-4 py-2" title="components">
+          <a
+            className="bg-primary hover:bg-primary-darker text-white px-4 py-2"
+            title="components"
+          >
             Components <FiArrowRight className="inline ml-1" />
           </a>
         </Link>
         <Link {...routes.TYPOGRAPHY}>
-          <a className="bg-blue-700 text-white px-4 py-2" title="Typography">
+          <a
+            className="bg-secondary hover:bg-secondary-darker text-white px-4 py-2"
+            title="Typography"
+          >
             Typography <FiArrowRight className="inline ml-1" />
           </a>
         </Link>

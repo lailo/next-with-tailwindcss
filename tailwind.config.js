@@ -10,7 +10,20 @@ module.exports = {
       header: ['Open Sans', 'sans-serif'],
       body: ['Open Sans', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          lighter: '#4FD1C5',
+          default: '#38B2AC',
+          darker: '#319795',
+        },
+        secondary: {
+          lighter: '#63B3ED',
+          default: '#4299E1',
+          darker: '#3182CE',
+        },
+      },
+    },
   },
   variants: {
     backgroundColor: ['dark', 'responsive', 'hover', 'focus'],

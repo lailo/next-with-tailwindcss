@@ -40,7 +40,7 @@ const IndexPage: NextPage = () => {
         <Input
           defaultValue="with error"
           startIcon={FiMail}
-          hasError
+          errorMessage="Email is not correct"
           className="mb-4"
         />
         <Input
@@ -49,7 +49,6 @@ const IndexPage: NextPage = () => {
           className="mb-4"
           startIcon={FiUser}
         />
-
         <Input
           placeholder="lailo-ch"
           label="With Help"

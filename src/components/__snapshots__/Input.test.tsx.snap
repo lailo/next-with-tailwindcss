@@ -57,6 +57,11 @@ exports[`Input matches with error snapshot 1`] = `
       placeholder="email"
     />
   </div>
+  <div
+    className="pl-2 mt-1 text-xs text-red-600 font-light"
+  >
+    there is an error
+  </div>
 </div>
 `;
 

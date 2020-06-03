@@ -32,7 +32,9 @@ describe('Input', () => {
   })
 
   it('matches with error snapshot', () => {
-    const wrapper = shallow(<Input placeholder="email" hasError />)
+    const wrapper = shallow(
+      <Input placeholder="email" errorMessage="there is an error" />
+    )
     expect(toJson(wrapper)).toMatchSnapshot()
   })
 

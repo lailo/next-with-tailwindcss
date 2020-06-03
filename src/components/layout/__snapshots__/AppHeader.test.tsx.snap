@@ -13,6 +13,7 @@ exports[`AppHeader matches snapshot 1`] = `
     >
       <a
         className="flex-grow text-xl font-black text-black dark:text-white dark:hover:text-black"
+        title="home"
       >
         My Project
       </a>
@@ -27,11 +28,25 @@ exports[`AppHeader matches snapshot 1`] = `
       >
         <li>
           <Link
+            as="/components"
+            href="/components"
+          >
+            <a
+              className="text-green-600 hover:underline"
+              title="components"
+            >
+              Components
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link
             as="/typography"
             href="/typography"
           >
             <a
               className="text-green-600 hover:underline"
+              title="Typography"
             >
               Typography
             </a>

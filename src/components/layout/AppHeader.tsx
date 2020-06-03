@@ -24,7 +24,10 @@ const AppHeader: React.FC<Props> = ({ className }) => {
     >
       <div className="mr-auto flex items-center">
         <Link {...routes.INDEX}>
-          <a className="flex-grow text-xl font-black text-black dark:text-white dark:hover:text-black">
+          <a
+            title="home"
+            className="flex-grow text-xl font-black text-black dark:text-white dark:hover:text-black"
+          >
             My Project
           </a>
         </Link>
@@ -33,8 +36,23 @@ const AppHeader: React.FC<Props> = ({ className }) => {
         <Dropdown buttonLabel={<FiMoreHorizontal />}>
           <ul className="w-40 space-y-4 py-2">
             <li>
+              <Link {...routes.COMPONENTS}>
+                <a
+                  className="text-green-600 hover:underline"
+                  title="components"
+                >
+                  Components
+                </a>
+              </Link>
+            </li>
+            <li>
               <Link {...routes.TYPOGRAPHY}>
-                <a className="text-green-600 hover:underline">Typography</a>
+                <a
+                  className="text-green-600 hover:underline"
+                  title="Typography"
+                >
+                  Typography
+                </a>
               </Link>
             </li>
             <li>

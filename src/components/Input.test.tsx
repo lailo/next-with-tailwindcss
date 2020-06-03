@@ -40,4 +40,9 @@ describe('Input', () => {
     const wrapper = shallow(<Input className="custom-class" />)
     expect(toJson(wrapper)).toMatchSnapshot()
   })
+
+  it('matches with help text', () => {
+    const wrapper = shallow(<Input helpText="my help text" />)
+    expect(toJson(wrapper)).toMatchSnapshot()
+  })
 })

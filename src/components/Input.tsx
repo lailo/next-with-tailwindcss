@@ -7,6 +7,7 @@ export interface Props {
   startIcon?: IconType
   hasError?: boolean
   label?: string
+  helpText?: string
 }
 
 const Input: React.FC<Props & React.HTMLProps<HTMLInputElement>> = ({
@@ -14,10 +15,11 @@ const Input: React.FC<Props & React.HTMLProps<HTMLInputElement>> = ({
   startIcon: StartIcon,
   hasError = false,
   label,
+  helpText,
   ...props
 }) => {
   return (
-    <>
+    <div className={clsx(className)}>
       {label && (
         <label
           className={clsx(
@@ -41,8 +43,7 @@ const Input: React.FC<Props & React.HTMLProps<HTMLInputElement>> = ({
           ],
           hasError && 'border-red-600',
           !hasError && 'text-black dark:text-white',
-          hasError && 'text-red-600',
-          className
+          hasError && 'text-red-600'
         )}
       >
         {StartIcon && (
@@ -56,7 +57,12 @@ const Input: React.FC<Props & React.HTMLProps<HTMLInputElement>> = ({
           )}
         />
       </div>
-    </>
+      {helpText && (
+        <div className="pl-2 mt-1 text-xs text-gray-600 font-light">
+          {helpText}
+        </div>
+      )}
+    </div>
   )
 }
 

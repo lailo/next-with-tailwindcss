@@ -49,6 +49,13 @@ const IndexPage: NextPage = () => {
           className="mb-4"
           startIcon={FiUser}
         />
+
+        <Input
+          placeholder="lailo-ch"
+          label="With Help"
+          className="mb-4"
+          helpText="Add some content here"
+        />
       </section>
 
       <section className="mb-20">

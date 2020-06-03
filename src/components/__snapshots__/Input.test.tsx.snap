@@ -1,19 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input matches custom class names snapshot 1`] = `
-<Fragment>
+<div
+  className="custom-class"
+>
   <div
-    className="flex items-center rounded-sm border border-gray-400 focus-within:border-gray-600 dark:border-gray-700 dark-focus-within:border-gray-600 text-black dark:text-white custom-class"
+    className="flex items-center rounded-sm border border-gray-400 focus-within:border-gray-600 dark:border-gray-700 dark-focus-within:border-gray-600 text-black dark:text-white"
   >
     <input
       className="bg-transparent w-full py-1 px-2"
     />
   </div>
-</Fragment>
+</div>
 `;
 
 exports[`Input matches default snapshot 1`] = `
-<Fragment>
+<div
+  className=""
+>
   <div
     className="flex items-center rounded-sm border border-gray-400 focus-within:border-gray-600 dark:border-gray-700 dark-focus-within:border-gray-600 text-black dark:text-white"
   >
@@ -22,11 +26,13 @@ exports[`Input matches default snapshot 1`] = `
       placeholder="email"
     />
   </div>
-</Fragment>
+</div>
 `;
 
 exports[`Input matches disabled snapshot 1`] = `
-<Fragment>
+<div
+  className=""
+>
   <div
     className="flex items-center rounded-sm border border-dashed bg-gray-300 dark:bg-gray-800 border-gray-400 focus-within:border-gray-600 dark:border-gray-700 dark-focus-within:border-gray-600 text-black dark:text-white"
   >
@@ -36,11 +42,13 @@ exports[`Input matches disabled snapshot 1`] = `
       placeholder="email"
     />
   </div>
-</Fragment>
+</div>
 `;
 
 exports[`Input matches with error snapshot 1`] = `
-<Fragment>
+<div
+  className=""
+>
   <div
     className="flex items-center rounded-sm border border-red-600 text-red-600"
   >
@@ -49,11 +57,32 @@ exports[`Input matches with error snapshot 1`] = `
       placeholder="email"
     />
   </div>
-</Fragment>
+</div>
+`;
+
+exports[`Input matches with help text 1`] = `
+<div
+  className=""
+>
+  <div
+    className="flex items-center rounded-sm border border-gray-400 focus-within:border-gray-600 dark:border-gray-700 dark-focus-within:border-gray-600 text-black dark:text-white"
+  >
+    <input
+      className="bg-transparent w-full py-1 px-2"
+    />
+  </div>
+  <div
+    className="pl-2 mt-1 text-xs text-gray-600 font-light"
+  >
+    my help text
+  </div>
+</div>
 `;
 
 exports[`Input matches with icon snapshot 1`] = `
-<Fragment>
+<div
+  className=""
+>
   <div
     className="flex items-center rounded-sm border border-gray-400 focus-within:border-gray-600 dark:border-gray-700 dark-focus-within:border-gray-600 text-black dark:text-white"
   >
@@ -65,5 +94,5 @@ exports[`Input matches with icon snapshot 1`] = `
       placeholder="email"
     />
   </div>
-</Fragment>
+</div>
 `;

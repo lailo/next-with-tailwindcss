@@ -8,7 +8,7 @@ exports[`Layout matches snapshot 1`] = `
     </title>
   </Head>
   <div
-    className="min-h-screen flex flex-col bg-gray-200 dark:bg-gray-900"
+    className="min-h-screen flex flex-col"
   >
     <AppHeader />
     <main
@@ -41,7 +41,7 @@ exports[`Layout matches snapshot with custom className 1`] = `
     </title>
   </Head>
   <div
-    className="min-h-screen flex flex-col bg-gray-200 dark:bg-gray-900"
+    className="min-h-screen flex flex-col"
   >
     <AppHeader />
     <main
@@ -74,7 +74,7 @@ exports[`Layout matches snapshot with title 1`] = `
     </title>
   </Head>
   <div
-    className="min-h-screen flex flex-col bg-gray-200 dark:bg-gray-900"
+    className="min-h-screen flex flex-col"
   >
     <AppHeader />
     <main

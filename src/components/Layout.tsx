@@ -18,7 +18,7 @@ const Layout: React.FC<Props> = ({
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="min-h-screen flex flex-col bg-gray-200 dark:bg-gray-900">
+      <div className="min-h-screen flex flex-col">
         <AppHeader />
         <main className={clsx('flex-grow', className)}>{children}</main>
         <footer className="text-xs text-center text-gray-600 py-4 px-3">

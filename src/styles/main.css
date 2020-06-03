@@ -5,3 +5,11 @@
 .dark-mode-transition * {
   @apply transition duration-500 ease-in-out;
 }
+
+body {
+  @apply bg-gray-200;
+}
+
+body.dark-mode {
+  @apply bg-gray-900;
+}

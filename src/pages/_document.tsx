@@ -15,7 +15,7 @@ class Document extends NextDocument {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
           <meta
@@ -23,7 +23,7 @@ class Document extends NextDocument {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        <body>
+        <body className="min-h-screen">
           <script
             dangerouslySetInnerHTML={{
               __html: `

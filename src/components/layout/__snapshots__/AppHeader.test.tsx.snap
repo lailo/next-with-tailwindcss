@@ -24,7 +24,7 @@ exports[`AppHeader matches snapshot 1`] = `
       buttonLabel={<FiMoreHorizontal />}
     >
       <ul
-        className="w-40 space-y-4 py-2"
+        className="w-40 space-y-4 py-2 text-sm"
       >
         <li>
           <Link
@@ -32,9 +32,12 @@ exports[`AppHeader matches snapshot 1`] = `
             href="/components"
           >
             <a
-              className="text-green-600 hover:underline"
+              className="text-primary hover:underline"
               title="components"
             >
+              <MdFeaturedPlayList
+                className="inline mr-2"
+              />
               Components
             </a>
           </Link>
@@ -45,9 +48,12 @@ exports[`AppHeader matches snapshot 1`] = `
             href="/typography"
           >
             <a
-              className="text-green-600 hover:underline"
+              className="text-primary hover:underline"
               title="Typography"
             >
+              <AiOutlineFontColors
+                className="inline mr-2"
+              />
               Typography
             </a>
           </Link>
@@ -61,7 +67,7 @@ exports[`AppHeader matches snapshot 1`] = `
           className="flex items-center justify-between"
         >
           <span
-            className="mr-auto text-sm text-gray-600"
+            className="mr-auto text-gray-600"
           >
             Theme
           </span>

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { NextPage } from 'next'
 import { FiMail, FiLock, FiUser } from 'react-icons/fi'
-import Layout from '../components/Layout'
+import Layout from '../components/layout/Layout'
 import Button from '../components/Button'
 import Input from '../components/Input'
 import Text from '../components/Text'

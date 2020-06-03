@@ -19,7 +19,24 @@ exports[`AppHeader matches snapshot 1`] = `
     </Link>
   </div>
   <div>
-    <ForwardRef(LoadableComponent) />
+    <Dropdown
+      buttonLabel={<FiMoreHorizontal />}
+    >
+      <ul
+        className="w-40"
+      >
+        <li
+          className="flex items-center justify-between"
+        >
+          <span
+            className="mr-auto"
+          >
+            Theme
+          </span>
+          <ForwardRef(LoadableComponent) />
+        </li>
+      </ul>
+    </Dropdown>
   </div>
 </header>
 `;

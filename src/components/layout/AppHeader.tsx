@@ -2,6 +2,8 @@ import * as React from 'react'
 import clsx from 'clsx'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
+import Dropdown from '@components/Dropdown'
+import { FiMoreHorizontal } from 'react-icons/fi'
 
 const ThemeSwitch = dynamic(() => import('@components/layout/ThemeSwitch'), {
   ssr: false,
@@ -30,7 +32,14 @@ const AppHeader: React.FC<Props> = ({ className }) => {
         </Link>
       </div>
       <div>
-        <ThemeSwitch />
+        <Dropdown buttonLabel={<FiMoreHorizontal />}>
+          <ul className="w-40">
+            <li className="flex items-center justify-between">
+              <span className="mr-auto">Theme</span>
+              <ThemeSwitch />
+            </li>
+          </ul>
+        </Dropdown>
       </div>
     </header>
   )
